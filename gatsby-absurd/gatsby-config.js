@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: `/ultramarine`,
+  pathPrefix: `/gatsby-absurd`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
