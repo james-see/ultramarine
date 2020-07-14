@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: "/ultramarine/gatsby-absurd",
+  pathPrefix: `/ultramarine/gatsby-absurd`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Ultramarine`,
+        short_name: `ultramarine`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,

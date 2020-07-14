@@ -31,15 +31,15 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Sun Powered
                 <br />
-                every way
+                Sensor box
                 <br />
-                that matters
+                that gives back
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                <StyledExternalLink href="https://github.com/jamesacampbell/ultramarine">
                   Check out source &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
