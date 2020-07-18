@@ -7,7 +7,7 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'What tech does Ultramarine use?',
     content: () => (
       <>
         Enjoy the power of the latest web technologies – React.js , Webpack ,
@@ -20,45 +20,32 @@ const FAQS = [
     title: 'Where can you source data from?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        You have ADSB data out of the box which provides information regarding planes within line-of-sight.
+        Additionally, you get bluetooth devices nearby, nearby wifi networks, and other data.
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'How do I access the data being collected?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        Everything is under the <pre>~/ultramarine/data`</pre> folder.
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'How much power is needed for 24hrs operation?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+        The board itself draws about 6w of power, a solar panel that generates 10w of power should be enough to save up energy during the day into the battery pack to ensure 24hr operation.
       </>
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
+    title: 'What exactly is included?',
     content: () => (
       <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        You get the box, the solar panel, and the necessary plugs to ensure everything works together as well as small instruction guide and runbook. The total cost is 500 USD. Since this is in early beta, please email james@jamescampbell.us for purchase orders.
       </>
     ),
   },

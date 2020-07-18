@@ -34,7 +34,7 @@ const Footer = () => (
           name: { eq: "customers_pot" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 960) {
+            fluid(maxWidth: 100) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -43,12 +43,12 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
+        {/* <Art>
           <Img
             fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
+            style={{ width: 100, maxWidth: '100%', marginBottom: -16 }}
           />
-        </Art>
+        </Art> */}
         <FooterWrapper>
           <StyledContainer>
 
@@ -85,16 +85,16 @@ const FooterWrapper = styled.footer`
   padding: 32px 0;
 `;
 
-const Copyright = styled.div`
-  font-family: ${props => props.theme.font.secondary};
-  ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.regular};
+// const Copyright = styled.div`
+//   font-family: ${props => props.theme.font.secondary};
+//   ${props => props.theme.font_size.small};
+//   color: ${props => props.theme.color.black.regular};
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-`;
+//   a {
+//     text-decoration: none;
+//     color: inherit;
+//   }
+// `;
 
 const Art = styled.figure`
   display: flex;

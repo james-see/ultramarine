@@ -4,41 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
-
-const LOGOS = [
-  {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
-  },
-  {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
-  },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
-  },
-];
 
 const UsedBy = () => (
   <StaticQuery
@@ -46,32 +12,33 @@ const UsedBy = () => (
       query {
         art_story: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
+          name: { eq: "alex" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            fluid(maxWidth: 200, quality: 100) {
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="partners" accent>
         <StyledContainer>
           <div>
             <h1>Partnering with communities to share open data</h1>
-            <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink key={link} href={link}>
-                  {logo()}
-                </ExternalLink>
-              ))}
-            </LogoGrid>
           </div>
+          <a href="http://www.visitalexandriava.com">
+          <LogoGrid>
+          
           <Art>
+            
             <Img fluid={data.art_story.childImageSharp.fluid} />
           </Art>
+          </LogoGrid>
+          </a>
+
         </StyledContainer>
       </Section>
     )}
@@ -83,7 +50,7 @@ const LogoGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
   justify-items: center;
-  margin-top: 96px;
+  margin-top: 196px;
 
   a {
     svg {
@@ -109,17 +76,19 @@ const StyledContainer = styled(Container)`
 const Art = styled.figure`
   width: 600px;
   position: absolute;
-  top: -12%;
-  right: 50%;
+  top: 70%;
+  right: 25%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 0;
-    right: 65%;
+    top: 70%;
+    right: 25%;
     width: 500px;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
+    top: 70%;
+    right: 25%;
+    width: 200px;
   }
 `;
 
