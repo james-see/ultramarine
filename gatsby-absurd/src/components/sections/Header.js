@@ -12,11 +12,12 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "boxhead" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            fluid(maxWidth: 500, quality: 100) {
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
@@ -31,9 +32,9 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Sun Powered
+                The Sun Powered
                 <br />
-                Sensor box
+                Sensor Box
                 <br />
                 that gives back
               </h1>
