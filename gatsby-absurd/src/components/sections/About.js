@@ -55,10 +55,10 @@ const About = () => (
             <div>
               <h2>The Anything Box</h2>
               <p>
-                The Ultramarine Project by <a href="https://krydus.com">Krydus</a> is a box 
+                The Ultramarine Project by <a href="https://www.jamescampbell.us">James Campbell</a> is a box 
                 that you can deploy anywhere the sun shines. It allows you to collect
                 bluetooth, wifi, AIS (ship transponder data), ADSB (aircraft data), and
-                air quality data out of the box. You don't even need an internet connection.
+                air quality data out of the box. You do not even need an internet connection.
               </p>
             </div>
             <Art>

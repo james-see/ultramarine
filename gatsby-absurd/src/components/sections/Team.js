@@ -7,14 +7,9 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Mike Williams',
-    image: 'josh.jpg',
-    role: 'CEO @ Krydus',
-  },
-  {
     name: 'James Campbell',
-    image: 'todd.jpg',
-    role: 'CPO @ Krydus',
+    image: 'josh.jpg',
+    role: 'CEO @ himself',
   }
 
 ];
